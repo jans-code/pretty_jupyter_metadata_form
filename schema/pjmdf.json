@@ -12,46 +12,16 @@
           "/pj_metadata/input": {
             "title": "Show input",
             "type": "boolean",
-            "default": true,
-            "oneOf": [
-              {
-                  "const": true,
-                  "title": "True"
-              },
-              {
-                  "const": false,
-                  "title": "False"
-              }
-            ]
+            "default": true
           },
           "/pj_metadata/output": {
             "title": "Show output",
             "type": "boolean",
-            "default": true,
-            "oneOf": [
-              {
-                  "const": true,
-                  "title": "True"
-              },
-              {
-                  "const": false,
-                  "title": "False"
-              }
-            ]
+            "default": true
           },
           "/pj_metadata/output_error": {
             "title": "Show errors",
-            "type": "boolean",
-            "oneOf": [
-              {
-                  "const": false,
-                  "title": "False"
-              },
-              {
-                  "const": true,
-                  "title": "True"
-              }
-            ]
+            "type": "boolean"
           },
           "/pj_metadata/input_fold": {
             "title": "Input Fold",
@@ -111,17 +81,7 @@
           "/pj_metadata/output/general/input": {
             "title": "Show code inputs",
             "type": "boolean",
-            "default": true,
-            "oneOf": [
-              {
-                  "const": true,
-                  "title": "True"
-              },
-              {
-                  "const": false,
-                  "title": "False"
-              }
-            ]
+            "default": true
           },
           "/pj_metadata/output/general/input_jinja": {
             "title": "Input Jinja",
@@ -140,46 +100,16 @@
           "/pj_metadata/output/general/output": {
             "title": "Show outputs",
             "type": "boolean",
-            "default": true,
-            "oneOf": [
-              {
-                  "const": true,
-                  "title": "True"
-              },
-              {
-                  "const": false,
-                  "title": "False"
-              }
-            ]
+            "default": true
           },
           "/pj_metadata/output/general/output_error": {
             "title": "Show error outputs",
-            "type": "boolean",
-            "oneOf": [
-              {
-                  "const": false,
-                  "title": "False"
-              },
-              {
-                  "const": true,
-                  "title": "True"
-              }
-            ]
+            "type": "boolean"
           },
           "/pj_metadata/output/general/output_stdout": {
             "title": "Show stdout",
             "type": "boolean",
-            "default": true,
-            "oneOf": [
-              {
-                  "const": true,
-                  "title": "True"
-              },
-              {
-                  "const": false,
-                  "title": "False"
-              }
-            ]
+            "default": true
           }
         }
       },
@@ -227,17 +157,7 @@
           "/pj_metadata/output/html/toc": {
             "title": "HTML ToC",
             "type": "boolean",
-            "default": true,
-            "oneOf": [
-              {
-                  "const": true,
-                  "title": "True"
-              },
-              {
-                  "const": false,
-                  "title": "False"
-              }
-            ]
+            "default": true
           },
           "/pj_metadata/output/html/toc_depth": {
             "title": "HTML ToC depth",
@@ -265,61 +185,21 @@
           "/pj_metadata/output/html/toc_collapsed": {
             "title": "HTML ToC collapsed",
             "type": "boolean",
-            "default": true,
-            "oneOf": [
-              {
-                  "const": true,
-                  "title": "True"
-              },
-              {
-                  "const": false,
-                  "title": "False"
-              }
-            ]
+            "default": true
           },
           "/pj_metadata/output/html/toc_smooth_scroll": {
             "title": "HTML ToC smooth scroll",
             "type": "boolean",
-            "default": true,
-            "oneOf": [
-              {
-                  "const": true,
-                  "title": "True"
-              },
-              {
-                  "const": false,
-                  "title": "False"
-              }
-            ]
+            "default": true
           },
           "/pj_metadata/output/html/toc_extend_page": {
             "title": "HTML ToC extend page",
             "type": "boolean",
-            "default": true,
-            "oneOf": [
-              {
-                  "const": true,
-                  "title": "True"
-              },
-              {
-                  "const": false,
-                  "title": "False"
-              }
-            ]
+            "default": true
           },
           "/pj_metadata/output/html/number_sections": {
             "title": "HTML number section",
-            "type": "boolean",
-            "oneOf": [
-              {
-                  "const": false,
-                  "title": "False"
-              },
-              {
-                  "const": true,
-                  "title": "True"
-              }
-            ]
+            "type": "boolean"
           },
           "/pj_metadata/output/html/code_folding": {
             "title": "Code Folding",
@@ -342,32 +222,12 @@
           },
           "/pj_metadata/output/html/code_tools": {
             "title": "HTML code tools",
-            "type": "boolean",
-            "oneOf": [
-              {
-                  "const": false,
-                  "title": "False"
-              },
-              {
-                  "const": true,
-                  "title": "True"
-              }
-            ]
+            "type": "boolean"
           },
           "/pj_metadata/output/html/tabset": {
             "title": "HTML Tabset",
             "type": "boolean",
-            "default": true,
-            "oneOf": [
-              {
-                  "const": true,
-                  "title": "True"
-              },
-              {
-                  "const": false,
-                  "title": "False"
-              }
-            ]
+            "default": true
           },
           "/pj_metadata/output/html/theme": {
             "title": "HTML Theme",
@@ -447,17 +307,7 @@
           "/pj_metadata/output/html/include_plotlyjs": {
             "title": "Include PlotlyJS",
             "type": "boolean",
-            "default": true,
-            "oneOf": [
-              {
-                  "const": true,
-                  "title": "True"
-              },
-              {
-                  "const": false,
-                  "title": "False"
-              }
-            ]
+            "default": true
           }
         }
       },
@@ -517,17 +367,7 @@
           "/pj_metadata/output/pdf/toc": {
             "title": "PDF ToC",
             "type": "boolean",
-            "default": true,
-            "oneOf": [
-              {
-                  "const": true,
-                  "title": "True"
-              },
-              {
-                  "const": false,
-                  "title": "False"
-              }
-            ]
+            "default": true
           },
           "/pj_metadata/output/pdf/toc_depth": {
             "title": "PDF ToC depth",
