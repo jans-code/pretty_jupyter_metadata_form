@@ -6,7 +6,7 @@ This jupyterlab extension adds all cell and notebook metadata attributes of [Pre
 
 ## Installation
 
-`pip install git+https://github.com/jans-code/pretty_jupyter_metadata_form.git`
+`pip install pretty_jupyter_metadata_form`
 
 ## Uninstall
 
