@@ -1,0 +1,584 @@
+{
+  "type": "object",
+  "title": "Pretty Jupyter Metadata Tools",
+  "description": "Settings for Pretty Jupyter metadata.",
+  "jupyter.lab.metadataforms": [
+    {
+      "id": "@prettyjupyter/metadata-form:cell",
+      "label": "Pretty Jupyter Cell Tools",
+      "metadataSchema": {
+        "type": "object",
+        "properties": {
+          "/pj_metadata/input": {
+            "title": "Show input",
+            "type": "boolean",
+            "default": true,
+            "oneOf": [
+              {
+                  "const": true,
+                  "title": "True"
+              },
+              {
+                  "const": false,
+                  "title": "False"
+              }
+            ]
+          },
+          "/pj_metadata/output": {
+            "title": "Show output",
+            "type": "boolean",
+            "default": true,
+            "oneOf": [
+              {
+                  "const": true,
+                  "title": "True"
+              },
+              {
+                  "const": false,
+                  "title": "False"
+              }
+            ]
+          },
+          "/pj_metadata/output_error": {
+            "title": "Show errors",
+            "type": "boolean",
+            "default": false,
+            "oneOf": [
+              {
+                  "const": true,
+                  "title": "True"
+              },
+              {
+                  "const": false,
+                  "title": "False"
+              }
+            ]
+          },
+          "/pj_metadata/input_fold": {
+            "title": "Input Fold",
+            "type": "string",
+            "default": "hide",
+            "oneOf": [
+              {
+                  "const": "show",
+                  "Title": "show"
+              },
+              {
+                  "const": "hide",
+                  "Title": "hide"
+              }
+            ]
+          }
+        }
+      },
+      "metadataOptions": {
+        "/pj_metadata/input": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/output": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/output_error": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/input_fold": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        }
+      }
+    },
+    {
+      "id": "@prettyjupyter/metadata-form:notebook",
+      "label": "Pretty Jupyter Notebook Tools",
+      "metadataSchema": {
+        "type": "object",
+        "properties": {
+          "/pj_metadata/title": {
+            "title": "Title",
+            "type": "string",
+            "default": "Untitled"
+          },
+          "/pj_metadata/author": {
+            "title": "Author",
+            "type": "string"
+          },
+          "/pj_metadata/date": {
+            "title": "Date",
+            "type": "string"
+          },
+          "/pj_metadata/output/general/input": {
+            "title": "Show code inputs",
+            "type": "boolean",
+            "default": true,
+            "oneOf": [
+              {
+                  "const": true,
+                  "title": "True"
+              },
+              {
+                  "const": false,
+                  "title": "False"
+              }
+            ]
+          },
+          "/pj_metadata/output/general/input_jinja": {
+            "title": "Input Jinja",
+            "type": "boolean",
+            "default": false,
+            "oneOf": [
+              {
+                  "const": true,
+                  "title": "True"
+              },
+              {
+                  "const": false,
+                  "title": "False"
+              }
+            ]
+          },
+          "/pj_metadata/output/general/output": {
+            "title": "Show outputs",
+            "type": "boolean",
+            "default": true,
+            "oneOf": [
+              {
+                  "const": true,
+                  "title": "True"
+              },
+              {
+                  "const": false,
+                  "title": "False"
+              }
+            ]
+          },
+          "/pj_metadata/output/general/output_error": {
+            "title": "Show error outputs",
+            "type": "boolean",
+            "default": false,
+            "oneOf": [
+              {
+                  "const": true,
+                  "title": "True"
+              },
+              {
+                  "const": false,
+                  "title": "False"
+              }
+            ]
+          },
+          "/pj_metadata/output/general/output_stdout": {
+            "title": "Show stdout",
+            "type": "boolean",
+            "default": true,
+            "oneOf": [
+              {
+                  "const": true,
+                  "title": "True"
+              },
+              {
+                  "const": false,
+                  "title": "False"
+              }
+            ]
+          }
+        }
+      },
+      "metadataOptions": {
+        "/pj_metadata/title": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/author": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/date": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/output/general/input": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/output/general/input_jinja": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/output/general/output": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/output/general/output_error": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/output/general/output_stdout": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        }
+      }
+    },
+    {
+      "id": "@prettyjupyter/metadata-form:html",
+      "label": "Pretty Jupyter HTML Tools",
+      "metadataSchema": {
+        "type": "object",
+        "properties": {
+          "/pj_metadata/output/html/toc": {
+            "title": "HTML ToC",
+            "type": "boolean",
+            "default": true,
+            "oneOf": [
+              {
+                  "const": true,
+                  "title": "True"
+              },
+              {
+                  "const": false,
+                  "title": "False"
+              }
+            ]
+          },
+          "/pj_metadata/output/html/toc_depth": {
+            "title": "HTML ToC depth",
+            "type": "integer",
+            "default": 3,
+            "oneOf": [
+              {
+                  "const": 1,
+                  "title": "1"
+              },
+              {
+                  "const": 2,
+                  "title": "2"
+              },
+              {
+                  "const": 3,
+                  "title": "3"
+              },
+              {
+                  "const": 4,
+                  "title": "4"
+              }
+            ]
+          },
+          "/pj_metadata/output/html/toc_collapsed": {
+            "title": "HTML ToC collapsed",
+            "type": "boolean",
+            "default": true,
+            "oneOf": [
+              {
+                  "const": true,
+                  "title": "True"
+              },
+              {
+                  "const": false,
+                  "title": "False"
+              }
+            ]
+          },
+          "/pj_metadata/output/html/toc_smooth_scroll": {
+            "title": "HTML ToC smooth scroll",
+            "type": "boolean",
+            "default": true,
+            "oneOf": [
+              {
+                  "const": true,
+                  "title": "True"
+              },
+              {
+                  "const": false,
+                  "title": "False"
+              }
+            ]
+          },
+          "/pj_metadata/output/html/toc_extend_page": {
+            "title": "HTML ToC extend page",
+            "type": "boolean",
+            "default": true,
+            "oneOf": [
+              {
+                  "const": true,
+                  "title": "True"
+              },
+              {
+                  "const": false,
+                  "title": "False"
+              }
+            ]
+          },
+          "/pj_metadata/output/html/number_sections": {
+            "title": "HTML number section",
+            "type": "boolean",
+            "default": false,
+            "oneOf": [
+              {
+                  "const": true,
+                  "title": "True"
+              },
+              {
+                  "const": false,
+                  "title": "False"
+              }
+            ]
+          },
+          "/pj_metadata/output/html/code_folding": {
+            "title": "Code Folding",
+            "type": "string",
+            "default": "hide",
+            "oneOf": [
+              {
+                  "const": "show",
+                  "Title": "show"
+              },
+              {
+                  "const": "hide",
+                  "Title": "hide"
+              },
+              {
+                  "const": "disable",
+                  "Title": "disable"
+              }
+            ]
+          },
+          "/pj_metadata/output/html/code_tools": {
+            "title": "HTML code tools",
+            "type": "boolean",
+            "default": false,
+            "oneOf": [
+              {
+                  "const": true,
+                  "title": "True"
+              },
+              {
+                  "const": false,
+                  "title": "False"
+              }
+            ]
+          },
+          "/pj_metadata/output/html/tabset": {
+            "title": "HTML Tabset",
+            "type": "boolean",
+            "default": true,
+            "oneOf": [
+              {
+                  "const": true,
+                  "title": "True"
+              },
+              {
+                  "const": false,
+                  "title": "False"
+              }
+            ]
+          },
+          "/pj_metadata/output/html/theme": {
+            "title": "HTML Theme",
+            "type": "string",
+            "default": "paper",
+            "oneOf": [
+              {
+                  "const": "bootstrap",
+                  "Title": "bootstrap"
+              },
+              {
+                  "const": "cerulean",
+                  "Title": "cerulean"
+              },
+              {
+                  "const": "cosmo",
+                  "Title": "cosmo"
+              },
+              {
+                  "const": "cyborg",
+                  "Title": "cyborg"
+              },
+              {
+                  "const": "darkly",
+                  "Title": "darkly"
+              },
+              {
+                  "const": "flatly",
+                  "Title": "flatly"
+              },
+              {
+                  "const": "journal",
+                  "Title": "journal"
+              },
+              {
+                  "const": "lumen",
+                  "Title": "lumen"
+              },
+              {
+                  "const": "paper",
+                  "Title": "paper"
+              },
+              {
+                  "const": "readable",
+                  "Title": "readable"
+              },
+              {
+                  "const": "sandstone",
+                  "Title": "sandstone"
+              },
+              {
+                  "const": "simplex",
+                  "Title": "simplex"
+              },
+              {
+                  "const": "slate",
+                  "Title": "slate"
+              },
+              {
+                  "const": "spacelab",
+                  "Title": "spacelab"
+              },
+              {
+                  "const": "superhero",
+                  "Title": "superhero"
+              },
+              {
+                  "const": "united",
+                  "Title": "united"
+              },
+              {
+                  "const": "yeti",
+                  "Title": "yeti"
+              }
+            ]
+          },
+          "/pj_metadata/output/html/include_plotlyjs": {
+            "title": "Include PlotlyJS",
+            "type": "boolean",
+            "default": true,
+            "oneOf": [
+              {
+                  "const": true,
+                  "title": "True"
+              },
+              {
+                  "const": false,
+                  "title": "False"
+              }
+            ]
+          }
+        }
+      },
+      "metadataOptions": {
+        "/pj_metadata/output/html/toc": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/output/html/toc_depth": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/output/html/toc_collapsed": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/output/html/toc_smooth_scroll": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/output/html/toc_extend_page": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/output/html/number_sections": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/output/html/code_folding": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/output/html/code_tools": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/output/html/tabset": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/output/html/theme": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/output/html/include_plotlyjs": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        }
+      }
+    },
+    {
+      "id": "@prettyjupyter/metadata-form:pdf",
+      "label": "Pretty Jupyter PDF Tools",
+      "metadataSchema": {
+        "type": "object",
+        "properties": {
+          "/pj_metadata/output/pdf/toc": {
+            "title": "PDF ToC",
+            "type": "boolean",
+            "default": true,
+            "oneOf": [
+              {
+                  "const": true,
+                  "title": "True"
+              },
+              {
+                  "const": false,
+                  "title": "False"
+              }
+            ]
+          },
+          "/pj_metadata/output/pdf/toc_depth": {
+            "title": "PDF ToC depth",
+            "type": "integer",
+            "default": 3,
+            "oneOf": [
+              {
+                  "const": 1,
+                  "title": "1"
+              },
+              {
+                  "const": 2,
+                  "title": "2"
+              },
+              {
+                  "const": 3,
+                  "title": "3"
+              },
+              {
+                  "const": 4,
+                  "title": "4"
+              }
+            ]
+          },
+          "/pj_metadata/output/pdf/language": {
+            "title": "PDF Language",
+            "type": "string",
+            "default": "english"
+          }
+        }
+      },
+      "metadataOptions": {
+        "/pj_metadata/output/pdf/toc": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/output/pdf/toc_depth": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        },
+        "/pj_metadata/output/pdf/language": {
+          "metadataLevel": "notebook",
+          "writeDefault": false
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}
