@@ -130,12 +130,12 @@
             "default": false,
             "oneOf": [
               {
-                  "const": true,
-                  "title": "True"
-              },
-              {
                   "const": false,
                   "title": "False"
+              },
+              {
+                  "const": true,
+                  "title": "True"
               }
             ]
           },
@@ -160,12 +160,12 @@
             "default": false,
             "oneOf": [
               {
-                  "const": true,
-                  "title": "True"
-              },
-              {
                   "const": false,
                   "title": "False"
+              },
+              {
+                  "const": true,
+                  "title": "True"
               }
             ]
           },
@@ -316,12 +316,12 @@
             "default": false,
             "oneOf": [
               {
-                  "const": true,
-                  "title": "True"
-              },
-              {
                   "const": false,
                   "title": "False"
+              },
+              {
+                  "const": true,
+                  "title": "True"
               }
             ]
           },
@@ -350,12 +350,12 @@
             "default": false,
             "oneOf": [
               {
-                  "const": true,
-                  "title": "True"
-              },
-              {
                   "const": false,
                   "title": "False"
+              },
+              {
+                  "const": true,
+                  "title": "True"
               }
             ]
           },
