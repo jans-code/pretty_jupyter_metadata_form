@@ -1,6 +1,6 @@
 {
     "name": "@jans-code/pretty_jupyter_metadata_form",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Pretty jupyter metadata forms extension for jupyterlab.",
     "keywords": [
         "jupyter",

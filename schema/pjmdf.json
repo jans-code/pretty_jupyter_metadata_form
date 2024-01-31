@@ -42,15 +42,14 @@
           "/pj_metadata/output_error": {
             "title": "Show errors",
             "type": "boolean",
-            "default": false,
             "oneOf": [
-              {
-                  "const": true,
-                  "title": "True"
-              },
               {
                   "const": false,
                   "title": "False"
+              },
+              {
+                  "const": true,
+                  "title": "True"
               }
             ]
           },
@@ -127,7 +126,6 @@
           "/pj_metadata/output/general/input_jinja": {
             "title": "Input Jinja",
             "type": "boolean",
-            "default": false,
             "oneOf": [
               {
                   "const": false,
@@ -157,7 +155,6 @@
           "/pj_metadata/output/general/output_error": {
             "title": "Show error outputs",
             "type": "boolean",
-            "default": false,
             "oneOf": [
               {
                   "const": false,
@@ -313,7 +310,6 @@
           "/pj_metadata/output/html/number_sections": {
             "title": "HTML number section",
             "type": "boolean",
-            "default": false,
             "oneOf": [
               {
                   "const": false,
@@ -347,7 +343,6 @@
           "/pj_metadata/output/html/code_tools": {
             "title": "HTML code tools",
             "type": "boolean",
-            "default": false,
             "oneOf": [
               {
                   "const": false,
