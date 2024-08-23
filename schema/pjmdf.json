@@ -20,8 +20,14 @@
             "default": true
           },
           "/pj_metadata/output_error": {
-            "title": "Show errors",
-            "type": "boolean"
+            "title": "Show error",
+            "type": "boolean",
+            "default": true
+          },
+          "/pj_metadata/output_stdout": {
+            "title": "Show stdout",
+            "type": "boolean",
+            "default": true
           },
           "/pj_metadata/input_fold": {
             "title": "Input Fold",
@@ -50,6 +56,10 @@
           "writeDefault": false
         },
         "/pj_metadata/output_error": {
+          "metadataLevel": "cell",
+          "writeDefault": false
+        },
+        "/pj_metadata/output_stdout": {
           "metadataLevel": "cell",
           "writeDefault": false
         },
@@ -104,10 +114,11 @@
           },
           "/pj_metadata/output/general/output_error": {
             "title": "Show error outputs",
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           },
           "/pj_metadata/output/general/output_stdout": {
-            "title": "Show stdout",
+            "title": "Show stdout outputs",
             "type": "boolean",
             "default": true
           }
