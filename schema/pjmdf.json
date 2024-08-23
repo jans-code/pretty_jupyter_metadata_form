@@ -42,19 +42,19 @@
       },
       "metadataOptions": {
         "/pj_metadata/input": {
-          "metadataLevel": "notebook",
+          "metadataLevel": "cell",
           "writeDefault": false
         },
         "/pj_metadata/output": {
-          "metadataLevel": "notebook",
+          "metadataLevel": "cell",
           "writeDefault": false
         },
         "/pj_metadata/output_error": {
-          "metadataLevel": "notebook",
+          "metadataLevel": "cell",
           "writeDefault": false
         },
         "/pj_metadata/input_fold": {
-          "metadataLevel": "notebook",
+          "metadataLevel": "cell",
           "writeDefault": false
         }
       }
